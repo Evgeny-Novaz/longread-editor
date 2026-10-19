@@ -1,0 +1,29 @@
+/* Shared by the print preview and the browser's Save as PDF destination. */
+@page{size:A4;margin:16mm}
+html,body.pdf-page{background:#fff;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+body.pdf-page{font-size:11pt;line-height:1.5}
+.pdf-page main{max-width:none;margin:0;padding:0}
+.pdf-page h1{font-size:25pt;line-height:1.2;min-height:0;margin:0 0 24px;break-after:avoid}
+.pdf-page #editor{min-height:0;padding:0}
+.pdf-page #editor h2,.pdf-page #editor h3{break-after:avoid}
+.pdf-page #editor p,.pdf-page #editor li{orphans:3;widows:3}
+.pdf-page .columns{grid-template-columns:1fr 1fr;gap:24px;padding:0}
+.pdf-page .columns>.column:last-child{padding-right:0}
+.pdf-page .column{min-height:0;box-shadow:none}
+.pdf-page .info{padding-right:16px;min-height:0;break-inside:avoid}
+.pdf-page .media{break-inside:avoid;max-width:100%}
+.pdf-page .image-box img{max-height:225mm;object-fit:contain}
+.pdf-page figcaption:empty{display:none}
+.pdf-page .column:empty::before,.pdf-page .info-text:empty::before{content:none}
+.pdf-page .comment-mark,.pdf-page .comment-mark:hover{background:transparent;border:0}
+.pdf-page .anchor-target{border-bottom:0}
+.pdf-page .file-attachment{break-inside:avoid}
+.pdf-page .file-details{flex-direction:row;align-items:baseline}
+.pdf-page #editor .file-name{white-space:normal;overflow-wrap:anywhere;font-size:11pt;line-height:1.5}
+.pdf-page .file-size{font-size:10pt}
+.pdf-page #editor .accordion-header{break-after:avoid}
+.pdf-page .accordion-body{min-height:0}
+.pdf-page #editor .accordion{overflow:visible}
+.pdf-page table{break-inside:auto}
+.pdf-page tr{break-inside:avoid}
+.pdf-page .pdf-media-note{color:#8a8e93}
