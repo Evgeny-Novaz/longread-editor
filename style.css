@@ -40,3 +40,5 @@
 .file-attachment:hover>.block-controls,.file-attachment:focus-within>.block-controls{opacity:1;pointer-events:auto}
 .comment-card{position:relative;padding-right:48px;min-height:48px}.comment-message-actions{position:absolute;top:8px;right:8px;margin:0}.delete-comment{background:transparent}
 @media(max-width:650px){.info{padding-right:88px}.media-file.file-attachment{gap:8px}}
+
+#title{position:relative}#title.is-empty::before{content:attr(data-placeholder);position:absolute;top:0;left:0;color:#8a8e93;pointer-events:none}
