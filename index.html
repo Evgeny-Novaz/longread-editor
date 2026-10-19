@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Редактор лонгридов · Центральный университет</title><meta name="description" content="Прототип редактора лонгридов для функционального тестирования"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><img class="logo" src="assets/b16ae.svg" alt="Центральный университет"><nav><span>Расписание</span><span class="current">Обучение</span><span>TiME</span></nav><div class="user"><img src="assets/773a4.svg" alt=""><img class="avatar" src="assets/6b056.png" alt="Пользователь editor.cu" title="editor.cu"></div></header>
+<div id="toolbar" class="toolbar" role="toolbar" aria-label="wysiwyg-editor"></div>
+<main><div class="breadcrumbs"><img src="assets/d707b.svg" alt="Главная"><img src="assets/72abf.svg" alt="">...<img src="assets/72abf.svg" alt="">Бэкенд на Django<img src="assets/505ef.svg" alt=""></div>
+<div class="title-row"><h1 id="title" contenteditable="plaintext-only" role="textbox" aria-label="Главный заголовок" spellcheck="false">1.2 Роль бэкенда в веб-разработке</h1><button id="more" aria-label="Настройки страницы" title="Настройки страницы"><img src="assets/43df7.svg" alt=""></button></div>
+<div class="editor-wrap"><div id="block-tools"><button id="drag-block" aria-label="Перетащить блок" title="Перетащить блок · Alt + ↑ / ↓"><span class="drag-dots" aria-hidden="true"></span></button><button id="add" aria-label="Добавить" title="Добавить" data-component="Добавить"><img src="assets/3da56.svg" alt=""></button></div><div id="drop-line" hidden></div><article id="editor" contenteditable="true" role="textbox" aria-label="Текст лонгрида" aria-multiline="true" spellcheck="false"><p><br></p></article></div>
+</main>
+<div id="bubble" class="bubble" role="toolbar" aria-label="Форматирование выделенного текста" hidden></div>
+<div id="popup" class="popup" hidden></div>
+<input id="upload" type="file" hidden multiple>
+<div id="toast" role="status" hidden></div><div id="save-status" role="status"></div>
+<script src="app.js"></script></body></html>
