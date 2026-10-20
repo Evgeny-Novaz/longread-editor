@@ -27,3 +27,7 @@ body.pdf-page{font-size:11pt;line-height:1.5}
 .pdf-page table{break-inside:auto}
 .pdf-page tr{break-inside:avoid}
 .pdf-page .pdf-media-note{color:#8a8e93}
+
+.pdf-page .latex-block{border:0;break-inside:avoid;padding:8px 0}.pdf-page .latex-render{overflow:visible;cursor:default}
+
+.pdf-page .latex-block[data-latex-mode="text"]{break-inside:auto;padding:8px 0}.pdf-page .latex-display-formula{break-inside:avoid;overflow:visible}
